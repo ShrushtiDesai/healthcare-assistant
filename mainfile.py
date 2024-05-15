@@ -54,8 +54,8 @@ def takeCommand():            # to take voice input
 
 
 def diseases():
-    train = pd.read_csv(r"C:\Users\Shrushti\Downloads\Training.csv\Training.csv")
-    test = pd.read_csv(r"C:\Users\Shrushti\Downloads\Testing.csv")
+    train = pd.read_csv(r"Training.csv")
+    test = pd.read_csv(r"Testing.csv")
     A = train
     B = test
 
@@ -677,9 +677,9 @@ def booking_details_email():
             collection = db["Appointment_details"]
 
             port = 465
-            sender_email = "healthcare.assistant8@gmail.com"
-            password = "vfxsrrcqtmceguza"#getpass("Type your password and press enter : ")
-            #receiver_email = [input("Enter your email here-> : ")] #"shrushtidesai02@gmail.com"  
+            sender_email = "your email id"
+            password = "password"#getpass("Type your password and press enter : ")
+            #receiver_email = [input("Enter your email here-> : ")]  
             query = takeCommand().lower()
             if(len(query)==0):
                 query = takeCommand().lower()
