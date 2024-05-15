@@ -671,7 +671,7 @@ def diseases():
 def booking_details_email():
         def booking(dr_type,dr_name,dr_add,dr_contact,i,dr_info,link1):
             # connecting tot the mongodb atlas 
-            cluster = pymongo.MongoClient("mongodb+srv://shrushti:mBWnaLmIvjQZfzo2@cluster-test.yceejon.mongodb.net/?retryWrites=true&w=majority")
+            cluster = pymongo.MongoClient("your link")
             db = cluster.test
             db = cluster["Booking_Appointments"]
             collection = db["Appointment_details"]
